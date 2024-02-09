@@ -31,6 +31,7 @@ import com.github.chrisbanes.photoview.OnMatrixChangedListener;
 import com.github.chrisbanes.photoview.OnPhotoTapListener;
 import com.github.chrisbanes.photoview.OnSingleFlingListener;
 import com.github.chrisbanes.photoview.PhotoView;
+import java.security.SecureRandom;
 
 import java.util.Random;
 
@@ -105,7 +106,7 @@ public class SimpleSampleActivity extends AppCompatActivity {
 
                     case R.id.menu_scale_random_animate:
                     case R.id.menu_scale_random:
-                        Random r = new Random();
+                        Random r = new SecureRandom();
 
                         float minScale = mPhotoView.getMinimumScale();
                         float maxScale = mPhotoView.getMaximumScale();
